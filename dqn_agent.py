@@ -35,8 +35,6 @@ class DQNAgent(object):
                                     name=self.env_name+'_'+self.algo+'_q_next',
                                     chkpt_dir=self.chkpt_dir)
 
-        #self.dim_bechir = self.q_eval.calculate_output_bechir(self.input_dims)
-
     def choose_action(self, observation):
         """
         Choose an action through an epsilon-greedy approach.
